@@ -1,0 +1,272 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+// Variale
+$font: 'PT Sans',
+sans-serif;
+$l-black: #333745;
+$white:#fff;
+$black: #000;
+$yellow:#f2d13e;
+//body
+body {
+  font-family: $font;
+  font-size: normal;
+}
+
+//navbar background
+.navbar {
+  background: $l-black;
+}
+
+//navbar brand
+.navbar-brand {
+  color: $white;
+  font-size: 50px;
+  font-weight: bold;
+  i {
+    color: $yellow;
+  }
+  span {
+    color: $yellow;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  &:hover {
+    color: $white;
+  }
+  .sub-title {
+    display: block;
+    font-size: 15px;
+    color: #8d919e;
+  }
+}
+
+//navbar item padding
+.nav-item {
+  padding: 0px 10px;
+}
+
+.nav-link {
+  color: $white;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.nav-link.active {
+  color: $yellow;
+}
+
+.form-inline {
+  .btn {
+    background: $white;
+    font-weight: bold;
+  }
+}
+
+button:focus {
+  outline: 0px dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+}
+
+.navbar-toggler-icon {
+  outline: none;
+  border: none;
+  i {
+    color: $yellow;
+    font-size: 40px;
+  }
+}
+
+header {
+  background: $yellow;
+  position: relative;
+}
+
+.header__text {
+  h2 {
+    color: #ffffff;
+    font: 300 40px/40px 'Open Sans';
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+    padding: 50px 0px;
+  }
+}
+
+.owl-dots {
+  position: absolute;
+  right: 30px;
+  bottom: -40px;
+}
+
+.owl-carousel button.owl-dot {
+  width: 65px;
+  height: 13px;
+  background: #3e454c;
+}
+
+.owl-carousel button.owl-dot.active {
+  background: $white;
+}
+
+/*****************************/
+
+.item__header {
+  h2 {
+    color: #333745;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ebeced;
+    width: 100%;
+  }
+}
+
+.single__item {
+  margin-top: 20px;
+  h4 {
+    text-transform: uppercase;
+    color: $yellow;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  p {
+    font: 300 15px 'Open Sans';
+    color: #333745;
+    margin-top: -2px;
+    text-transform: uppercase;
+  }
+}
+
+/** navbar aarea end */
+
+.help {
+  padding: 100px 0px;
+  background: #fafafa;
+}
+
+.single__help {
+  h3 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: none;
+    color: #333745;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  span {
+    text-align: center;
+    display: block;
+    i {
+      font-size: 40px;
+      width: 90px;
+      height: 90px;
+      line-height: 90px;
+      background: $yellow;
+      border-radius: 50%;
+      color: $white;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  h4 {
+    color: #f2d13e;
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: 20px;
+    margin: 20px 0px;
+  }
+  p {
+    text-align: justify;
+  }
+  .btn {
+    width: 120px;
+    border-radius: 0px;
+    background: #353030;
+    border: none;
+  }
+}
+
+.testimonial {
+  background: url(../img/bg.jpeg);
+  background-attachment: fixed;
+  background-position: center center;
+  padding: 100px 0px;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000ab;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+  p {
+    color: #fff;
+    font-size: 20px;
+  }
+  cite {
+    color: #fff;
+    font-size: 30px;
+  }
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  left: -120px;
+  top: 0px;
+  font-size: 76px;
+  color: white;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  right: -120px;
+  top: 0px;
+  font-size: 76px;
+  color: white;
+}
+
+footer {
+  background: #222530;
+  padding: 20px 0px;
+}
+
+.footer__text {
+  p {
+    padding-top: 10px;
+    color: #fff;
+  }
+}
+
+.footer__social {
+  span {
+    padding: 0px 10px;
+    i {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      background: #686e86;
+      border-radius: 50%;
+      &:hover {
+        background: $yellow;
+      }
+    }
+  }
+}
+
+@import "responsive";
